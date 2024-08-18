@@ -1,0 +1,11 @@
+pipeline {
+     agent { label 'staging' }
+
+     stages {
+         stage( 'Apache2 Installation' ) {
+            steps {
+               sudo apt -y install apache2
+            }
+         }
+     }
+}
