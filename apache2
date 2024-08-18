@@ -4,7 +4,7 @@ pipeline {
      stages {
          stage( 'Apache2 Installation' ) {
             steps {
-               sh 'sudo apt -y install apache2'
+               sh 'sudo apt -y install maven'
             }
          }
      }
